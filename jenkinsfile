@@ -32,7 +32,7 @@ pipeline {
                 sh 'sudo docker rm nodetodoapp || true'
                 sh 'sudo docker run -d --name nodetodoapp pradeepyedam/nodo-todo-app-test:latest'
                 sh '''
-                ssh -i Ubuntudemo.pem -o StrictHostKeyChecking=no ubuntu@44.211.144.201 <<EOF
+                ssh -i Ubuntudemo.pem -o StrictHostKeyChecking=no ubuntu@172.31.38.142 <<EOF
                 sudo docker login -u pradeepyedam -p dckr_pat_OvN0lH_USJztUCkm0opyjz-yXNc
                 sudo docker pull pradeepyedam/nodo-todo-app-test:latest
                 sudo docker stop nodetodoapp || true
