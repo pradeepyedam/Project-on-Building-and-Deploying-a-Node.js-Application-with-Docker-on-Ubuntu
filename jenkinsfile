@@ -2,26 +2,21 @@ pipeline {
     agent { label 'project' }
     
     stages{
-        stage('Checkout'){
-            steps{
-                git url: 'https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu.git', branch: 'master'
-            }
-        }
         stage('Build'){
             steps{
-                sh 'sudo docker build . -t pradeepyedam/nodo-todo-app-test:latest'
+                sh 'sudo docker build . -t yedampradeep/nodo-todo-app-test:latest'
             }
         }
         stage('Test image') {
             steps {
                 echo 'testing...'
-                sh 'sudo docker inspect --type=image pradeepyedam/nodo-todo-app-test:latest '
+                sh 'sudo docker inspect --type=image yedampradeep/nodo-todo-app-test:latest '
             }
         }
         
         stage('Push'){
             steps{
-        	     sh "sudo docker login -u pradeepyedam -p dckr_pat_zsdhCTpRamtR-sPVHIk2PT1k2YE"
+        	     sh "sudo docker login -u yedampradeep -p dckr_pat_zsdhCTpRamtR-sPVHIk2PT1k2YE"
                  sh 'sudo docker push pradeepyedam/nodo-todo-app-test:latest'
             }
         }  
@@ -33,7 +28,7 @@ pipeline {
                 sh 'sudo docker run -d --name nodetodoapp pradeepyedam/nodo-todo-app-test:latest'
                 sh '''
                 ssh -i Ubuntudemo.pem -o StrictHostKeyChecking=no ubuntu@172.31.38.142 <<EOF
-                sudo docker login -u pradeepyedam -p dckr_pat_zsdhCTpRamtR-sPVHIk2PT1k2YE
+                sudo docker login -u yedampradeep -p dckr_pat_zsdhCTpRamtR-sPVHIk2PT1k2YE
                 sudo docker pull pradeepyedam/nodo-todo-app-test:latest
                 sudo docker stop nodetodoapp || true
                 sudo docker rm nodetodoapp || true 
