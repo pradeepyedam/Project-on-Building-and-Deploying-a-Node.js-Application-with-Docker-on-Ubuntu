@@ -21,7 +21,7 @@ pipeline {
         
         stage('Push'){
             steps{
-        	     sh "sudo docker login -u pradeepyedam -p Pr@deep27"
+        	     sh "sudo docker login -u pradeepyedam -p dckr_pat_zsdhCTpRamtR-sPVHIk2PT1k2YE"
                  sh 'sudo docker push pradeepyedam/nodo-todo-app-test:latest'
             }
         }  
@@ -33,7 +33,7 @@ pipeline {
                 sh 'sudo docker run -d --name nodetodoapp pradeepyedam/nodo-todo-app-test:latest'
                 sh '''
                 ssh -i Ubuntudemo.pem -o StrictHostKeyChecking=no ubuntu@172.31.38.142 <<EOF
-                sudo docker login -u pradeepyedam -p Pr@deep27
+                sudo docker login -u pradeepyedam -p dckr_pat_zsdhCTpRamtR-sPVHIk2PT1k2YE
                 sudo docker pull pradeepyedam/nodo-todo-app-test:latest
                 sudo docker stop nodetodoapp || true
                 sudo docker rm nodetodoapp || true 
