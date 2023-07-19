@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Checkout'){
             steps{
-                git url: 'https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu.git', branch: 'main'
+                git url: 'https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu.git', branch: 'master'
             }
         }
         stage('Build'){
