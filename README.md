@@ -31,4 +31,7 @@ ls
 
 In the README.md file, the user can find the requirements for the project. After understanding 'README.md' file the requirements for the project are documented, including the need for Node.js, Java, and npm.
 
+<img width="318" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/4fa513c8-ffa0-4186-8dde-2427585c298c">
+
+
 
