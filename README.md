@@ -137,6 +137,20 @@ Commands to follow
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/f89f16ef-35eb-4e6e-8a9b-6c0359c89dee">
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/e66ab92a-c2eb-4d74-bba8-f44f6f9adb97">
+
+Step 3: Cross-checking the Master-Node is connected to Agent-node
+· Open the master-node terminal and run the following command to get access to the agent node in the master-node terminal.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/57e652ee-8c82-43ad-ab50-8752c40c36a7">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/89f8396e-2a6a-42aa-87ce-58486c64e6b6">
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/db379c65-8b22-4b9a-b917-48c3ab31e15f">
+
+
+
+
+
 
 
 
