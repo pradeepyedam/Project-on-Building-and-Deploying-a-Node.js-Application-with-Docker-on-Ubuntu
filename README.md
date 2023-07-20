@@ -51,6 +51,10 @@ To check the images, use the command "docker images".
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/332191a6-387c-40cb-ba5e-a8d29bc71418">
 
+Step 5: Create a docker container Create a Docker container A Docker container is created using the Docker image that was built in the previous step. The '-d' flag is used to run the container in detached mode, and the '-p' flag is used to map port 8000 of the container to port 8000 of the host machine.
+
+Commands docker run -d -p8000:8000 node-todo-app:latest
+
 
 
 
