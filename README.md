@@ -9,7 +9,9 @@ Step 1 - Installation of docker on Ubuntu The first step is to update the packag
 
 2.apt-get install docker.io -y
 
-3.docker --version<img width="494" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/a1d6fe45-16eb-4cd1-bb26-b1411e9a191b">
+3.docker --version
+
+<img width="494" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/a1d6fe45-16eb-4cd1-bb26-b1411e9a191b">
 
 
 
