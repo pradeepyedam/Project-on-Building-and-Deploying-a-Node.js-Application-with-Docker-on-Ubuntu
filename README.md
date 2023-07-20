@@ -214,8 +214,34 @@ Step 2: Create a Node-todo-app-deployment Job with Pipeline • Go to Dashboard 
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/45572201-f26d-4ace-8829-5a3e7bbf2ba3">
 
-• Give job description • Select GitHub project and past GitHub project link • Here, I used my GitHub project link 
-https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu.git
+• Give job description • Select GitHub project and past GitHub project link • Here, I used my GitHub project link https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu.git
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/95069b67-a1f2-4030-8914-1d0bd6f21100">
+
+• Selected GitHub hook trigger for GITscm polling for Build Triggers. To set-up webhook trigger follow the steps • Go to github project link in that go to setting of the project. • In setting, click on webhooks and click on add webhook • In Payload URL — entre https://:8080/github-webhook/ • In event you can select as your requirement. • Click on Add webhook
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/0e71b510-ecae-48e2-bec0-6de22aeb4480">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/a5148fda-7052-4a85-801e-18e68508fd89">
+
+• In Pipeline definition, select pipeline script, enter your groovy code.
+
+In a Jenkins pipeline, Groovy code is typically defined in a Jenkinsfile, which is a text file that contains the pipeline definition.The Jenkinsfile is written using the Groovy programming language and is used to define the stages, steps, and other elements of the pipeline.
+
+There are many stages like Checkout, Build, Test, Push and Deploy
+
+1.Build Stage In a Jenkins pipeline, the "Build" stage is typically the first stage in the pipeline, and it is responsible for building the source code. The "Build" stage can include any necessary steps to compile the code, package it into a deployable format, and perform any other necessary preparation tasks. Here in this stage, I am building a docker image using docker file through command and tagging image with basanagoudapatil/nodo-todo-app-test:latest' Note: Install docker and docker compose in Jenkins Master-Node. stage('Build’){ steps{ sh 'docker build . -t basanagoudapatil/nodo-todo-app-test:latest' } }
+
+2.Test Stage In a Jenkins pipeline, the "Test" stage is typically the second stage in the pipeline, and it is responsible for running tests to verify the correctness of the built code. The "Test" stage can include any necessary steps to execute the tests and generate test reports. Here in this stage, I am testing docker image by executing command docker inspect --type=image basanagoudapatil/nodo-todo-app-test:latest stage('Test image') { steps { echo 'testing...' sh 'docker inspect --type=image basanagoudapatil/nodo-todo-app-test:latest ' } }
+
+3.Push Stage In this stage, I am pushing docker image to my Dockerhub public repository and for dockerHub password I have generated separated dockerhub token. stage('Push'){ steps{ sh "sudo docker login -u basanagoudapatil -p dckr_pat_OvN0lH_USJztUCkm0opyjz-yXNc" sh 'sudo docker push basanagoudapatil/nodo-todo-app-test:latest' } }
+
+5.Deploy Stage In a Jenkins pipeline, the "Deploy" stage is typically the final stage in the pipeline, and it is responsible for deploying the built and tested artifacts to a target environment. The "Deploy" stage can include any necessary steps to deploy the built artifacts to a target environment, such as a production server or a container registry. Here in this stage, I am building docker compose and deploying to another server using SSH command. stage('Deploy'){ steps{ echo 'deploying on another server' sh 'sudo docker stop nodetodoapp || true' sh 'sudo docker rm nodetodoapp || true' sh 'sudo docker run -d --name nodetodoapp -p 8000:8000 basanagoudapatil/nodo-todo-app-test:latest' sh ''' ssh -i Ubuntudemo.pem -o StrictHostKeyChecking=no ubuntu@44.211.144.201 <<EOF sudo docker login -u basanagoudapatil -p dckr_pat_OvN0lH_USJztUCkm0opyjz-yXNc sudo docker pull basanagoudapatil/nodo-todo-app-test:latest sudo docker stop nodetodoapp || true sudo docker rm nodetodoapp || true sudo docker run -d --name nodetodoapp -p 8000:8000 basanagoudapatil/nodo-todo-app-test:latest ''' } }
+
+Final pipeline script pipeline { agent { label 'Dev-Agent node' }
+
+
+
 
 
 
