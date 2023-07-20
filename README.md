@@ -83,6 +83,42 @@ Pre-Requisites:
 
 3.Docker Installation
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/4909aa29-80a0-45d5-860c-9cffc139a826">
+
+Step 1: Set up a Jenkins Cluster (Master Node and Agent Node) • Jenkins can be configured as a single server or as a cluster of servers, where the workload is distributed across multiple nodes. • In a Jenkins cluster, multiple Jenkins instances, called nodes, work together to execute jobs. Each node has its own resources (such as CPU, memory, and disk space) and can perform builds independently. • The Jenkins master controls the cluster and assigns jobs to the agent nodes based on their availability and workload. • When a job is submitted to the Jenkins master, it decides which node to run the job on, based on the configured load balancing algorithm. The job is then executed on the selected node.
+
+Jenkins is an open-source automation server that provides a platform for continuous integration and continuous delivery (CI/CD). It is widely used in software development to automate the build, test, and deployment processes. Jenkins can be configured as a single server or as a cluster of servers, where the workload is distributed across multiple nodes.
+
+The benefits of using a Jenkins cluster are as follows
+
+1. Scalability: A Jenkins cluster can scale horizontally by adding more agent nodes to distribute build and deployment tasks. This allows the cluster to handle larger workloads without overloading the master node.
+
+2. High availability: With a Jenkins cluster, if one node fails, the cluster can still continue to function as other nodes can pick up the workload. This ensures high availability of the Jenkins services.
+
+3. Improved performance: By distributing build and deployment tasks across multiple nodes, a Jenkins cluster can improve performance and reduce the time it takes to complete tasks.
+
+4. Resource utilization: A Jenkins cluster can utilize resources more efficiently by distributing the workload across multiple nodes. This can help reduce the idle time of resources and increase their utilization.
+
+5. Flexibility: A Jenkins cluster can be easily customized to meet the specific needs of a development team. Nodes can be added or removed based on workload, and different types of nodes can be used for different types of tasks.
+
+Prerequisite:
+
+1. Two AWS EC2 Instance
+
+1-instance for Master-Node and another 1-instance for Agent-Node with Ubuntu OS
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/bfdae626-0bf1-404d-a62c-3e0fcaa19a0e">
+
+2. Java installation in both EC2 instances
+
+3. Jenkins installation in EC2 instance of Master-Node
+
+(Use this website to install Jenkins and Java for Linux OS )
+
+https://www.jenkins.io/doc/book/installing/linux/
+
+
+
 
 
 
