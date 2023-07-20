@@ -210,6 +210,13 @@ Here I have successfully connected agent node to master node and its online.
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/780f4804-bfe1-47d3-bed8-58459b7fa308">
 
+Step 2: Create a Node-todo-app-deployment Job with Pipeline • Go to Dashboard and click on New Item • Enter an item name as “node-todo-app-deployment” and select pipeline as a job and click on OK.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/45572201-f26d-4ace-8829-5a3e7bbf2ba3">
+
+• Give job description • Select GitHub project and past GitHub project link • Here, I used my GitHub project link
+
+
 
 
 
