@@ -49,6 +49,8 @@ Step 4: Build the docker image Build the Docker image Once the Dockerfile has be
 
 To check the images, use the command "docker images".
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/332191a6-387c-40cb-ba5e-a8d29bc71418">
+
 
 
 
