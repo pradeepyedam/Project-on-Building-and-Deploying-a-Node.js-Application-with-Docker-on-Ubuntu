@@ -39,6 +39,11 @@ To Create a Docker image using a Dockerfile A Dockerfile is used to define the c
 
 <img width="848" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/cbe83cfd-3dd5-4893-a9d8-aae18ab55427">
 
+Create a Dockerfile to define the environment for the application. The Dockerfile specifies the base image to use, the packages to install, and any other configuration required for the application.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/1bf43b2a-8fa7-4897-993c-ac92ac89636e">
+
+
 
 
 
