@@ -240,6 +240,36 @@ There are many stages like Checkout, Build, Test, Push and Deploy
 
 Final pipeline script pipeline { agent { label 'Dev-Agent node' }
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/3d14f0a3-b104-40f3-8040-133b2203980b">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/4ca00922-71c5-4da3-8f0f-c1e737dbec1b">
+
+• Click on Save and Apply
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/7adee798-bb35-4778-89b0-1c2d065d57f5">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/8fdf8dae-1dc0-4566-a87c-59b361e6fe92">
+
+• Finally…! Our Nodo-todo-app-deployment pipeline successfully Checkout, Build, Tested, Pushed and deployed.
+
+• Docker images successfully pushed to dockerHub repository
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/d96a1065-af74-44f3-82df-dd196e43ac76">
+
+Step 3: Open port 8000 in the Deploying on live server Instance’s security inbound rule
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/90401b76-22de-46cc-882d-9c99845b2591">
+
+Open port 8000 in the instance’s security inbound rule To allow traffic to access the application, port 8000 needs to be opened in the instance’s security inbound rule.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/12f5e7fd-fdd0-4ac1-a489-69298856493d">
+
+Step 4: Check if the application is running Check if the application is running Finally, we can check if the application is running by opening a browser and typing the URL ‘http://:8000’ (http://44.211.144.201) in a web browser.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/d38eecdf-20c2-4f15-b974-b948942bfc69">
+
+
+
 
 
 
