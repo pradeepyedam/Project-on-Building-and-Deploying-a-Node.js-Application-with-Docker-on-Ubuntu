@@ -55,6 +55,39 @@ Step 5: Create a docker container Create a Docker container A Docker container i
 
 Commands docker run -d -p8000:8000 node-todo-app:latest
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/aee09ba8-2db6-4ad6-936c-4d04b95435a6">
+
+The user can check the running containers by using the command "sudo docker ps".
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/e3b3fefd-01b8-4d33-b3a4-646311295a8d">
+
+Step 6: Open port 8000 in the instance’s security inbound rule Open port 8000 in the instance’s security inbound rule To allow traffic to access the application, port 8000 needs to be opened in the instance’s security inbound rule.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/d80bebc3-f014-4970-a215-da482ab63c40">
+
+Step 7: Check if the application is running Check if the application is running Finally, we can check if the application is running by opening a browser and typing the URL 'http://<host_ip_address>:8000' in a web browser.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/44c9cd55-1ee9-42be-8f48-be74ccb385cc">
+
+**Project on Building and Deploying a Node.js Application with Docker on Ubuntu using Jenkins CI/CD Pipeline **
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/395d891e-4c88-489b-950f-aaf695b9ff97">
+
+The project aims to set up a Jenkins cluster consisting of a master node, an agent node, and a live server using three AWS EC2 instances. The project requires installing Java, Jenkins, and Docker on the master and agent nodes. The Jenkins cluster distributes the workload across multiple nodes, and the master node controls and assigns jobs to agent nodes. A pipeline is created to deploy a Node.js application using Docker. The pipeline has stages such as checkout, build, test, push, and deploy, which perform different tasks such as fetching source code from GitHub, building a Docker image, testing the image, pushing it to DockerHub, and deploying it to the live server. The project helps in automating the deployment process and saves time and effort by eliminating manual tasks.
+
+Pre-Requisites:
+
+1.3 EC2 Instance (1 for Jenkins Master-Node, 1 for Jenkins Agent-Node and 1 for Deploying live sever)
+
+2.Jenkins and Java Installation in Master-Node Only Java Installation in Agent-Node
+
+3.Docker Installation
+
+
+
+
+
+
 
 
 
