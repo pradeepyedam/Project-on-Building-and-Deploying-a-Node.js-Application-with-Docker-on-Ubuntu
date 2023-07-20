@@ -214,7 +214,8 @@ Step 2: Create a Node-todo-app-deployment Job with Pipeline • Go to Dashboard 
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/45572201-f26d-4ace-8829-5a3e7bbf2ba3">
 
-• Give job description • Select GitHub project and past GitHub project link • Here, I used my GitHub project link
+• Give job description • Select GitHub project and past GitHub project link • Here, I used my GitHub project link 
+https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu.git
 
 
 
