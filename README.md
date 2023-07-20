@@ -168,6 +168,51 @@ Step 4: Setting Agent in Jenkins-Master-Node.
 
 · In HOST, Put public_ip of Agent-node
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/371c5758-5be5-454e-985c-cc8df1fa7e7b">
+
+· In Credential, Select Add and Jenkins.
+
+· In add Credentials, in-kind — select “SSH Username with private key”.
+
+· Give ID name and Description.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/63c20388-a44e-4ae0-b7e0-e0a27a9a816c">
+
+· In Username, give as ubuntu
+
+· In Private-key, past the private ssh_key (id_rsa) which was generated in master-node.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/c5691223-4605-478f-8389-87e127455c11">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/376bdebf-0d33-4b15-924d-c0a5de6657ab">
+
+· Click on Add.
+
+· Now, In Credentials select Ubuntu.
+
+· In Host key Verification Strategy, select “Non verifying verification strategy”.
+
+· And, Click on Save.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/79ce7718-7f78-4ec5-945b-eede51d74f16">
+
+· Now, select the gems.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/706d2ccd-d2f8-428b-89f1-c20a574ce34a">
+
+· click on launch agent.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/780f4804-bfe1-47d3-bed8-58459b7fa308">
+
+Successfully… Our Agent is connected to Jenkins-Master
+
+
+
+
+
+
+
+
 
 
 
