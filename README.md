@@ -264,7 +264,7 @@ Open port 8000 in the instance’s security inbound rule To allow traffic to acc
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/12f5e7fd-fdd0-4ac1-a489-69298856493d">
 
-Step 4: Check if the application is running Check if the application is running Finally, we can check if the application is running by opening a browser and typing the URL ‘http://:8000’ (http://44.211.144.201) in a web browser.
+Step 4: Check if the application is running Check if the application is running Finally, we can check if the application is running by opening a browser and typing the URL ‘http://:8000’ (http://13.212.252.94) in a web browser.
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/d38eecdf-20c2-4f15-b974-b948942bfc69">
 
