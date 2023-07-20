@@ -6,5 +6,7 @@ Building and Deploying a Node.js Application with Docker on Ubuntu
 Step 1 - Installation of docker on Ubuntu The first step is to update the package manager. The second step is to install Docker by using the command "sudo apt-get install docker.io -y" on the terminal. After installation, the Docker version can be checked by typing "sudo docker –version" in the terminal. Command-
 
 1.apt-get update
+
 2.apt-get install docker.io -y
+
 3.docker --version
