@@ -1,2 +1,3 @@
 Building and Deploying a Node.js Application with Docker on Ubuntu
-https://user-images.githubusercontent.com/63364609/233578283-21cfc13a-7475-4509-b477-6a02bbef8be1.png
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/87c108d2-b07b-4b9b-a07f-36822502d280">
