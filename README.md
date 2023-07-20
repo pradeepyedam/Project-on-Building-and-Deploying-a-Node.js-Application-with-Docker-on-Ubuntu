@@ -26,4 +26,7 @@ Cd react_django_demo1_app
 
 ls
 
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/0901f459-412a-40fd-be4c-85df852342fa">
+
+
 
