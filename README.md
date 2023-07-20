@@ -23,6 +23,7 @@ Step 2 : Clone the code from Github The code for the project is cloned from GitH
 Step 3: Check the files and understand the requirements Check the files and understand the requirements Once the code has been cloned, we navigate to the directory using the command 'cd react_django_demo1_app' and use the 'ls' command to list the files in the directory. This helps us to understand the requirements of the project. Commands
 
 Cd react_django_demo1_app
+
 ls
 
 
