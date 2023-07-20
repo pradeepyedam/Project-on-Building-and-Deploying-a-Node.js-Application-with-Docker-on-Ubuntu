@@ -117,6 +117,27 @@ Prerequisite:
 
 https://www.jenkins.io/doc/book/installing/linux/
 
+Step 1: Creating ssh key pair in Master Node.
+· Follow the commands to generate the ssh-keygen
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/f5186f86-332a-4d69-866c-7f1a09ceedcd">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/8227f1e3-cea1-476d-a513-51621c4e410a">
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/e805c61c-38ff-4264-afaf-27ccf3df58f6">
+
+Step 2: Connecting Agent Node to Master Node
+· Copy the public key (id_rsa.pub) which was generated in the master node
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/ac62d08f-a45e-45d4-bff4-a553eaca556d">
+
+· Past the public key in Agent Node of the .ssh directory of the authorized_keys file.
+
+Commands to follow
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/f89f16ef-35eb-4e6e-8a9b-6c0359c89dee">
+
+
 
 
 
