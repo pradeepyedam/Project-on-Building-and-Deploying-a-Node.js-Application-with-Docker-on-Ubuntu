@@ -204,7 +204,15 @@ Step 4: Setting Agent in Jenkins-Master-Node.
 
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/780f4804-bfe1-47d3-bed8-58459b7fa308">
 
-Successfully… Our Agent is connected to Jenkins-Master
+Successfully… Our Agent is connected to Jenkins-Master.
+
+Here I have successfully connected agent node to master node and its online.
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/780f4804-bfe1-47d3-bed8-58459b7fa308">
+
+
+
+
 
 
 
