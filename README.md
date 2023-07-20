@@ -147,6 +147,30 @@ Step 3: Cross-checking the Master-Node is connected to Agent-node
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/89f8396e-2a6a-42aa-87ce-58486c64e6b6">
 <img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/db379c65-8b22-4b9a-b917-48c3ab31e15f">
 
+Successfully connected to agent node in the master-node terminal.
+
+Step 4: Setting Agent in Jenkins-Master-Node.
+· Open Jenkins-Master server
+
+<img width="587" alt="image" src="https://github.com/pradeepyedam/Project-on-Building-and-Deploying-a-Node.js-Application-with-Docker-on-Ubuntu/assets/134625420/e9f3a477-7248-4728-9cc6-b82a1d8458ec">
+
+· Click on Set up an agent
+
+· Give a name to Node and select Agent type as a permanent agent
+
+· Give a Description and give a number of executors as 1.
+
+· In the Remote root directory, give the working path of agent-node as /home/ubuntu
+
+· Give a label and in usage select “Use this node as much as possible”.
+
+· In the launch method, select “launch agents via SSH”.
+
+· In HOST, Put public_ip of Agent-node
+
+
+
+
 
 
 
